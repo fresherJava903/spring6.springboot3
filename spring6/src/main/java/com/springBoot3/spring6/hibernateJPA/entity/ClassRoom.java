@@ -14,4 +14,7 @@ public class ClassRoom {
     @OneToMany(mappedBy = "classRoom")
     private List<Student> students;
 
+    @Column(name = "class_name")
+    private String className;
+
 }

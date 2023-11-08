@@ -24,7 +24,6 @@ public class StudentDAOImp implements StudentDAO {
         this.entityManager = entityManager;
     }
 
-    @Transactional
     @Override
     public void save(Student student) {
         entityManager.persist(student);
@@ -47,7 +46,6 @@ public class StudentDAOImp implements StudentDAO {
     }
 
     @Override
-    @Transactional
     public void update(Integer id, String value) {
         Student student = entityManager.find(Student.class, id);
         student.setEmail(value);
@@ -55,7 +53,6 @@ public class StudentDAOImp implements StudentDAO {
     }
 
     @Override
-    @Transactional
     public void deleteStudent(Integer id) {
         try {
             Student student = entityManager.find(Student.class, id);
