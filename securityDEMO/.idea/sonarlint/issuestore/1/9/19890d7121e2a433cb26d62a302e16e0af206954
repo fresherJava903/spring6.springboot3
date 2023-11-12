@@ -1,0 +1,10 @@
+
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ï©«äøÿÿÿÿ8ÌÞ±œ¼1
+H
+java:S5344",Use secure "PasswordEncoder" implementation.(Äüÿ8ÐÞ±œ¼1
+V
+java:S1874":Remove this use of "Md4PasswordEncoder"; it is deprecated.(Äüÿ8ÑÞ±œ¼1
+I
+java:S5344",Use secure "PasswordEncoder" implementation.(…›§Š8ÒÞ±œ¼1
+\
+java:S1874"?Remove this use of "StandardPasswordEncoder"; it is deprecated.(…›§Š8ÒÞ±œ¼1

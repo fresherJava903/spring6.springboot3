@@ -57,26 +57,3 @@ public class SpringSecurityConfigurationDefaultSchema {
     }
 
 }
-//    @Bean
-//    public UserDetailsManager userDetailsManager(DataSource dataSource) {
-//        JdbcUserDetailsManager jdbcUserDetailsManager = new JdbcUserDetailsManager();
-//        jdbcUserDetailsManager.setUsersByUsernameQuery("select username, password from users where username = ?");
-//        jdbcUserDetailsManager.setAuthoritiesByUsernameQuery("select a.authority " +
-//                "from authority a join user_authority au on a.authority_id = au.authority_id" +
-//                "join users u on au.student_id = u.student_id where u.username = ?");
-//        return jdbcUserDetailsManager;
-//    }
-//
-//    @Bean
-//    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-//        http.authorizeHttpRequests(configure ->
-//                configure
-//                        .requestMatchers(HttpMethod.GET,"/student/all").hasRole("USER")
-//                        .requestMatchers(HttpMethod.POST,"/student/add").hasRole("ADMIN")
-//                        .requestMatchers(HttpMethod.DELETE,"/student/delete").hasRole("ROOT"));
-//        http.httpBasic(Customizer.withDefaults());
-//
-//        //Cross site request forgery (CSRF)
-//        http.csrf(csrf -> csrf.disable());
-//        return http.build();
-//    }

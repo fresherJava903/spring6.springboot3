@@ -13,8 +13,4 @@ public class SpringAuthorities {
 
     @Column(name = "authority")
     private String authority;
-
-    @ManyToOne
-    @JoinColumn
-    private SpringUser user;
 }

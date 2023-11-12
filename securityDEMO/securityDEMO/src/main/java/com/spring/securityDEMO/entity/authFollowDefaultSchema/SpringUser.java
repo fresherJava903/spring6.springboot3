@@ -3,7 +3,6 @@ package com.spring.securityDEMO.entity.authFollowDefaultSchema;
 import jakarta.persistence.*;
 import lombok.Data;
 
-import java.util.Set;
 
 @Entity
 @Table(name = "users")
@@ -16,7 +15,4 @@ public class SpringUser {
     private String password;
     @Column(name = "enabled")
     private byte enabled;
-
-    @OneToMany(mappedBy = "user")
-    private Set<SpringAuthorities> authorities;
 }

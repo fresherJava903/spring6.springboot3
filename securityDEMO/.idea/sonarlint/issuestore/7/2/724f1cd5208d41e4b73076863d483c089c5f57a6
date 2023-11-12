@@ -1,0 +1,6 @@
+
+I
+java:S1444",Make this "public static SECRET" field final(Ø∆§Ë8∆‘äùº1
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(˜ì•ú8Ñ•äóº1
+n
+java:S3008"QRename this field "SECRET" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ø∆§Ë8Œ‘äùº1
