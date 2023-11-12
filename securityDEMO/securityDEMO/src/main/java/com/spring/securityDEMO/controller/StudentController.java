@@ -3,7 +3,6 @@ package com.spring.securityDEMO.controller;
 import com.spring.securityDEMO.entity.dto.StudentDTO;
 import com.spring.securityDEMO.entity.exception.StudentNotCreatedException;
 import com.spring.securityDEMO.service.StudentService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -24,6 +23,12 @@ public class StudentController {
 //        StudentExceptionResponse response = new StudentExceptionResponse(HttpStatus.NOT_ACCEPTABLE, exception.getMessage());
 //        return new ResponseEntity<>(response, HttpStatus.NOT_ACCEPTABLE);
 //    }
+
+    @GetMapping("/")
+    public ResponseEntity<String> hello() {
+        String greeting = "Hello there!";
+        return new ResponseEntity<>(greeting, HttpStatus.ACCEPTED);
+    }
 
     @GetMapping("/get")
     public ResponseEntity<List<String>> getAll() {

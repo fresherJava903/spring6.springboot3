@@ -1,7 +1,7 @@
 package com.spring.securityDEMO.controller;
 
 import com.spring.securityDEMO.entity.dto.UserDTO;
-import com.spring.securityDEMO.service.UserService;
+import com.spring.securityDEMO.JWT.service.UserService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
